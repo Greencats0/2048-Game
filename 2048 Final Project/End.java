@@ -22,14 +22,14 @@ public class End extends Actor
     }
     public void spawnResetBoard(){
         GreenfootImage reset = new GreenfootImage(200,50);
-        reset.setColor(new Color(0,0,0,160));
+        reset.setColor(new greenfoot.Color(0,0,0,160));
         reset.fillRect(0,0,200,50);
-        reset.setColor(new Color(255,255,255,100));
+        reset.setColor(new greenfoot.Color(255,255,255,100));
         reset.fillRect(5,5,190,40);
-        Font font = reset.getFont();
+        greenfoot.Font font = reset.getFont();
         font = font.deriveFont(18.0f);
         reset.setFont(font);
-        reset.setColor(Color.WHITE);
+        reset.setColor(greenfoot.Color.WHITE);
         reset.drawString("Press 1 to RESET ",10,20);
         setImage(reset);
     }

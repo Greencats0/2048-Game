@@ -1,6 +1,8 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Credits()
-comment1.params=check
-comment1.target=boolean\ showCredits(boolean)
-numComments=2
+comment0.target=Credits
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Credits\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Credits()
+comment2.params=check
+comment2.target=boolean\ showCredits(boolean)
+numComments=3

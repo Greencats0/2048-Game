@@ -15,7 +15,7 @@ public class Beginning extends Actor
      */
     public void act() 
     {
-
+        
     }
 
     public Beginning(){
@@ -24,14 +24,14 @@ public class Beginning extends Actor
 
     public void makeStatement(){
         GreenfootImage enter = new GreenfootImage(200,50);
-        enter.setColor(new Color(0,0,0,160));
+        enter.setColor(new greenfoot.Color(0,0,0,160));
         enter.fillRect(0,0,200,50);
-        enter.setColor(new Color(255,255,255,100));
+        enter.setColor(new greenfoot.Color(255,255,255,100));
         enter.fillRect(5,5,190,40);
-        Font font = enter.getFont();
+        greenfoot.Font font = enter.getFont();
         font = font.deriveFont(18.0f);
         enter.setFont(font);
-        enter.setColor(Color.WHITE);
+        enter.setColor(greenfoot.Color.WHITE);
         enter.drawString("Press ENTER to Start ",10,20);
         setImage(enter);
     }

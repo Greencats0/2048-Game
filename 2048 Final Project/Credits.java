@@ -26,17 +26,17 @@ public class Credits extends Actor
         else
         {
             GreenfootImage end = new GreenfootImage(width, height); //begin "part 1"
-            end.setColor(new Color(0,0,0,160));
+            end.setColor(new greenfoot.Color(0,0,0,160));
             end.fillRect(0,0,width,height);
-            end.setColor(new Color(255,255,255,100));
+            end.setColor(new greenfoot.Color(255,255,255,100));
             end.fillRect(5,5,width-10,height-10);
-            Font font = end.getFont();
+            greenfoot.Font font = end.getFont();
             font = font.deriveFont(fontsize);
             end.setFont(font);
-            end.setColor(Color.WHITE);
+            end.setColor(greenfoot.Color.WHITE);
             end.drawString("CREDITS ",60,40);
             end.drawString("Created by: ",25,70);
-            end.drawString("Gen Akamatsu", 25, 100);
+            end.drawString("Jake Wong", 25, 100);
             end.drawString("Kevin Iwamoto", 20, 130);
             end.drawString("Marjorie Wang", 25, 160);
             setImage(end);

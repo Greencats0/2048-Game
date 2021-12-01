@@ -26,14 +26,14 @@ public class Scoreboard extends Actor
     public void createWinBoard(String title)
     {
         GreenfootImage end = new GreenfootImage(width, height); //begin "part 1"
-        end.setColor(new Color(0,0,0,160));
+        end.setColor(new greenfoot.Color(0,0,0,160));
         end.fillRect(0,0,width,height);
-        end.setColor(new Color(255,255,255,100));
+        end.setColor(new greenfoot.Color(255,255,255,100));
         end.fillRect(5,5,width-10,height-10);
-        Font font = end.getFont();
+        greenfoot.Font font = end.getFont();
         font = font.deriveFont(fontsize);
         end.setFont(font);
-        end.setColor(Color.WHITE); //end "part 1"
+        end.setColor(greenfoot.Color.WHITE); //end "part 1"
         end.drawString(title,60,40);
         end.drawString("Press 3 to CONTINUE", 10, 80);
 
@@ -43,14 +43,14 @@ public class Scoreboard extends Actor
     public void makeScore(String title, String header, int score, int hiscore)
     {
         GreenfootImage end = new GreenfootImage(width, height); //begin "part 1"
-        end.setColor(new Color(0,0,0,160));
+        end.setColor(new greenfoot.Color(0,0,0,160));
         end.fillRect(0,0,width,height);
-        end.setColor(new Color(255,255,255,100));
+        end.setColor(new greenfoot.Color(255,255,255,100));
         end.fillRect(5,5,width-10,height-10);
-        Font font = end.getFont();
+        greenfoot.Font font = end.getFont();
         font = font.deriveFont(fontsize);
         end.setFont(font);
-        end.setColor(Color.WHITE); //end "part 1"
+        end.setColor(greenfoot.Color.WHITE); //end "part 1"
         end.drawString(title,60,30);
         end.drawString(header+score,25,60);
         end.drawString("Hi-score: " + hiscore,25,90);
